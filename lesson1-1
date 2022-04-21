@@ -1,0 +1,7 @@
+age = int(input("Напишите сколько Вам лет: "))
+print("Хороший возраст!")
+
+number = 67
+print(number ** 2)
+
+name = input("Напишите своё имя: ")
