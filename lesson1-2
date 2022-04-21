@@ -1,0 +1,6 @@
+time = int(input("Введите время в секундах "))
+h = time // 3600
+ost_s = time % 3600
+m = ost_s // 60
+s = ost_s % 60
+print(f"{h:02}:{m:02}:{s:02}")
