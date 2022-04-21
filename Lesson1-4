@@ -1,0 +1,8 @@
+number = int(input("Введите любое целое положительное число "))
+max = 0
+while number != 0:
+    ost_n = number % 10
+    number = number // 10
+    if ost_n > max:
+        max = ost_n
+print(max)
