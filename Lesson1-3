@@ -1,0 +1,5 @@
+ = int(input("Введите любое однозначное  число "))
+nn = n*10 + n
+nnn = n*100 + n*10 + n
+summa = n + nn + nnn
+print(summa)
