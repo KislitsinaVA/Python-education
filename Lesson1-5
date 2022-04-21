@@ -1,0 +1,13 @@
+vyruchka = int(input("Введите значение выручки "))
+ubyl = int(input("Введите значение издержек "))
+if vyruchka > ubyl:
+    print("Ваш финансовый результат - прибыль")
+
+    pribyl = vyruchka - ubyl
+    rent = pribyl / vyruchka
+    print("рентабельность фирмы", round(rent, 2) * 100, "%")
+    chislo_s = int(input("Введите численность сотрудников фирмы "))
+    pribyl_s = pribyl / chislo_s
+    print("Прибыль на одного сотрудника", round(pribyl_s, 2))
+else:
+    print("Ваш финансовый результат - убыток")
