@@ -1,0 +1,8 @@
+probeg = int(input("Достижение 1-го дня в км - "))
+cel = int(input("Желаемое  достижение в км -  "))
+day = 1
+progress = probeg
+while progress < cel:
+    day = day + 1
+    progress = progress*1.1
+print(day)
