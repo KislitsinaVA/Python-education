@@ -1,0 +1,4 @@
+my_list = ['asd', 34, 12.4, ['name', 'age', 'photo'], (1, 2, 3),
+           {1: 'a', 2: 'h'}, {5,6,7}, True, None]
+my_type = list(map(type, my_list))
+print(my_type)
