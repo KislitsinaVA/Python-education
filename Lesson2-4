@@ -1,0 +1,3 @@
+my_str = input("Введите несколько слов, разделенных пробелами - ").split()
+for num, words in enumerate(my_str):
+    print(num +1, '-', words[:10])
