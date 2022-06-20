@@ -1,0 +1,11 @@
+my_list = [9,8,7,7,6,5,4,4,4,3,2,1]
+new_number = ""
+i = 0
+new_number = input("Введите любое натуральное число -  ")
+for num in my_list:
+    if int(new_number) <= num:
+        i +=1
+    else:
+        break
+my_list.insert(i, int(new_number))
+print(my_list)
