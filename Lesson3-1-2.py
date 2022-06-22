@@ -5,6 +5,8 @@ num_2 = int(input("Введите делитель: "))
 
 def division(num_1, num_2):
     try:
-        result = num_1 / num_2
+        return num_1 / num_2
     except ZeroDivisionError:
         print("На ноль делить нельзя")
+
+print(division())
