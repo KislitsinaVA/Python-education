@@ -1,0 +1,9 @@
+def my_func(n_1, n_2, n_3):
+    """Функция находит минимальное значение аргумента из 3-х и суммирует оставшиеся"""
+	
+    list_args = [n_1, n_2, n_3]
+    list_args.remove(min(list_args))
+    return sum(list_args)
+
+
+print(my_func(12,34,5667))
