@@ -1,10 +1,10 @@
-def patience_info(**kwargs):
-    return list(kwargs.values())
+# у меня сложилось  впечатление, что в варианте 3-1
+# именнованные параметры. Изменила на позиционные в моем разумении
+num_1 = int(input("Введите делимое: "))
+num_2 = int(input("Введите делитель: "))
 
-
-print(patience_info(name=input("Введите свое имя: "),
-                    surname=input("Введите свою фамилию: "),
-                    data=input("Введите дату рождения: "),
-                    town=input("Введите город проживания: "),
-                    email=input("Введите адрес электронной почты: "),
-                    phone=input("Введите номер телефона: ")), end='')
+def division(num_1, num_2):
+    try:
+        result = num_1 / num_2
+    except ZeroDivisionError:
+        print("На ноль делить нельзя")
