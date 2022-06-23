@@ -1,0 +1,12 @@
+def summa_numbers():
+    s = 0
+    while True:
+        numbers = input("Введите числа, разделенные пробелом. Для выхода нажать 'z' ").split()
+        for num in numbers:
+            if num == 'z':
+                return s
+            else:
+                s += int(num)
+        print(f"Сумма чисел равна {s}")
+
+summa_numbers()
