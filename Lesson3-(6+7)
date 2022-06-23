@@ -1,0 +1,12 @@
+def int_func():
+    words = input("Введите слова из маленьких латинских букв: ").split()
+    for word in words:
+        words_2 = []
+        for letter in word:
+            if ord(letter) >= int(97) and ord(letter) <= int(122):
+                words_2.append(letter)
+                
+                
+        print(''.join(words_2).title())
+
+int_func()
