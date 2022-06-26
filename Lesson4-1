@@ -1,0 +1,11 @@
+from sys import argv
+
+hour = float(argv[1])
+payment_hour = float(argv[2])
+premium = float(argv[3])
+def salary():
+        salary = (float(argv[1]) * float(argv[2])) + float(argv[3])
+    return salary
+    
+
+print(salary())
