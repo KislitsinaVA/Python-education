@@ -1,0 +1,6 @@
+# к сожалению, не собрала l_compr в одну строчку, получилось 2, вышибает на ошибке синтаксиса
+my_list_21 = [num for num in range(20, 241, 21)]
+my_list_20 = [num for num in range(20, 241, 20)]
+
+
+print(sorted(my_list_20 + my_list_21))
