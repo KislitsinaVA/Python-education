@@ -1,0 +1,6 @@
+from functools import reduce
+from operator import mul
+my_multiplication = reduce(mul, [num for num in range(100, 1001, 2)])
+
+
+print(my_multiplication)
