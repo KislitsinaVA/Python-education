@@ -1,0 +1,26 @@
+#сначала неправильно пон€ла задание и подсчитала все строки и слова в тексте
+
+
+with open("input.txt", encoding="utf-8") as f:
+    lines = 0
+    words = 0
+    for line in f.readlines():
+        lines +=1
+        for word in line.strip():
+            words +=1
+    print(f"¬сего в тексте {lines} строк и {words} слов")
+	
+	
+# в этом варианте считает отдельно строки и слова в каждой строчке
+
+	
+f = open("input.txt", encoding="utf-8")
+lines = f.readlines()
+i = 0
+for k, v in enumerate(lines, 1):
+    words = len(v.split())
+    i +=1
+    print(f"—лов в {k} строке - {words}")
+print(f"¬сего в тексте {i} строк")
+
+f.close()
