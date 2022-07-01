@@ -1,0 +1,10 @@
+# вроде работает. Ничего не придумала лучше, чем снести всё лишнее. 
+
+hours = {}
+with open('input_2.txt', 'r', encoding='utf-8') as f:
+
+    for line in f:
+        line = line.replace('(л)', '').replace('(пр)', '').replace('(лаб)', '') \
+        .replace('-', '').replace(':', '').replace(',', '').split()
+        hours[line[0]] = sum(map(int, line[1:]))
+    print(f" {hours}")

@@ -1,0 +1,5 @@
+e_dict = {"One": "Один", "Two": "Два", "Three": "Три", "Four": "Четыре"}
+with open("input.txt", "r", encoding="utf-8") as r:
+    with open("input_2.txt", "w", encoding="utf-8") as w:
+        for line in r:
+            w.writelines(line.replace(line.split()[0], e_dict.get(line.split()[0])))

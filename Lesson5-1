@@ -1,0 +1,7 @@
+file_1 = open('input.txt', 'w', encoding='utf-8')
+print("Введите свой любимый афоризм (для выхода - пустая строка):  ")
+while (stroka := input()):
+    if stroka == "":
+        break
+    print(stroka, file=file_1)
+file_1.close()
