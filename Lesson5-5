@@ -1,0 +1,7 @@
+with open("input_2.txt", "w+", encoding="utf-8") as f:
+    summa = 0
+    f.write("1 2 453 4 5 6 8")
+    f.seek(0)
+    for i in f.readline().split():
+        summa += int(i)
+    print(summa)
